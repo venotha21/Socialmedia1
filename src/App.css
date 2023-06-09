@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -36,3 +37,18 @@
     transform: rotate(360deg);
   }
 }
+likes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  transform: scale(0);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}                 
