@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button"
 import toastr from 'toastr';
 import 'toastr/build/toastr.min.css';
 import './likebutton.js';
+import './dislikebutton.js';
 
 
 function Add(props){
@@ -59,7 +60,7 @@ function Add(props){
         caption: "",
       })
       
-      toastr["success"]("Todo added, success")
+      toastr["success"]("Post added, success")
     }
 
     
@@ -94,9 +95,12 @@ function Add(props){
               value={formValues.caption}
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          
+          
+          <Button variant="primary" type="submit" spacing="4px" >
             Post
           </Button>
+          
         </Form>
       </div>
   );

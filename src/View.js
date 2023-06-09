@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import Table from 'react-bootstrap/Table';
 import './App.css';
+import Likes from './likebutton';
+import Dislikes from './dislikebutton';
+
 
 function View(props){
 
@@ -16,6 +19,8 @@ function View(props){
             {
               post.username
             }
+            <Likes/> 
+            <Dislikes />
           </div>
         })
        }

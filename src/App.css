@@ -1,6 +1,9 @@
 
+
 .App {
   text-align: center;
+  margin: 10px;
+  padding: 40px;
 }
 
 .App-logo {
@@ -22,7 +25,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(242, 242, 245);
+ 
 }
 
 .App-link {
@@ -37,11 +41,13 @@
     transform: rotate(360deg);
   }
 }
-likes {
+Likes {
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+  left: 30;
+  top: 30;
+  padding: 30px;
+  margin: 30em;
+  height: 50%;
   width: 100%;
   pointer-events: none;
   z-index: 10;
@@ -51,4 +57,10 @@ likes {
   background-size: 50%;
   transform: scale(0);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
 }                 
+
+
+
+
+

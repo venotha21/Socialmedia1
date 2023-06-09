@@ -1,25 +1,25 @@
 import React from "react";
 
 
-class dislikes extends React.Component{
+class Dislikes extends React.Component{
 
     state = {
-        dislikes : 0
+        Dislikes : 0
     }
 
     handleClick = () => {
         this.setState({
-            dislikes : this.state.dislikes + 1
+            Dislikes : this.state.Dislikes + 1
         })
     }
     render(){
         return(
             <div>
-                <button onClick={this.handleClick}>dislikes: {this.state.dislikes}</button>
+                <button onClick={this.handleClick}>Dislikes: {this.state.Dislikes}</button>
             </div>
         )
     }
 }
 
-export default dislikes;
+export default Dislikes;
     
